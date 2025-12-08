@@ -1,0 +1,107 @@
+.footnotes-panel {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footnotes-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-lg);
+    padding-bottom: var(--space-md);
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.footnotes-header h3 {
+    margin: 0;
+    color: var(--text-primary);
+    font-size: var(--text-lg);
+}
+
+.footnote-count {
+    color: var(--primary-500);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    padding: var(--space-xs) var(--space-md);
+    background: rgba(79, 172, 254, 0.1);
+    border-radius: var(--radius-full);
+}
+
+.footnotes-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    overflow-y: auto;
+}
+
+.footnote-item {
+    display: flex;
+    gap: var(--space-md);
+    padding: var(--space-md);
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all var(--transition-base);
+}
+
+.footnote-item:hover {
+    background: rgba(0, 0, 0, 0.4);
+    border-color: var(--primary-500);
+    transform: translateX(4px);
+}
+
+.footnote-marker {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-500);
+    color: var(--bg-primary);
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    font-size: var(--text-sm);
+}
+
+.footnote-info {
+    flex: 1;
+}
+
+.footnote-text {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: var(--text-sm);
+    line-height: 1.5;
+}
+
+.placeholder-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    padding: var(--space-2xl);
+}
+
+.placeholder-icon {
+    font-size: 4rem;
+    margin-bottom: var(--space-lg);
+    opacity: 0.5;
+}
+
+.placeholder-state h4 {
+    margin: 0 0 var(--space-md) 0;
+    color: var(--text-primary);
+    font-size: var(--text-lg);
+}
+
+.placeholder-state p {
+    margin: 0;
+    color: var(--text-tertiary);
+    font-size: var(--text-sm);
+    max-width: 300px;
+}

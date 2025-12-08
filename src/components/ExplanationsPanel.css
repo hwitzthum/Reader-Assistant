@@ -1,0 +1,117 @@
+.explanations-panel {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.placeholder-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    padding: var(--space-2xl);
+}
+
+.placeholder-icon {
+    font-size: 4rem;
+    margin-bottom: var(--space-lg);
+    opacity: 0.5;
+}
+
+.placeholder-state h4 {
+    margin: 0 0 var(--space-md) 0;
+    color: var(--text-primary);
+    font-size: var(--text-lg);
+}
+
+.placeholder-state p {
+    margin: 0;
+    color: var(--text-tertiary);
+    font-size: var(--text-sm);
+    max-width: 300px;
+}
+
+.explanation-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.selected-text-card,
+.explanation-card {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-md);
+}
+
+.card-title {
+    font-weight: 600;
+    color: var(--primary-500);
+    font-size: var(--text-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.btn-clear {
+    background: transparent;
+    border: none;
+    color: var(--text-tertiary);
+    cursor: pointer;
+    font-size: var(--text-lg);
+    padding: var(--space-xs);
+    transition: all var(--transition-base);
+}
+
+.btn-clear:hover {
+    color: var(--error);
+    transform: scale(1.1);
+}
+
+.selected-text {
+    color: var(--text-secondary);
+    font-style: italic;
+    line-height: 1.6;
+    margin: 0 0 var(--space-md) 0;
+    padding: var(--space-md);
+    background: rgba(0, 0, 0, 0.2);
+    border-left: 3px solid var(--primary-500);
+    border-radius: var(--radius-sm);
+}
+
+.explanation-text {
+    color: var(--text-primary);
+    line-height: 1.8;
+    font-size: var(--text-base);
+    white-space: pre-wrap;
+}
+
+.loading-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-2xl);
+    color: var(--text-secondary);
+}
+
+.error-state {
+    padding: var(--space-lg);
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.2);
+    border-radius: var(--radius-md);
+    color: var(--error);
+}
+
+.error-state p {
+    margin: 0;
+}
